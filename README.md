@@ -10,7 +10,7 @@ Clone this repository to your local device then run
 composer install
 ```
 
-Then create the database with laravel artisan. \*Make sure that the Database Configuration at `.env` file is correct then run this command
+Then create the database with laravel artisan. \*Make sure that the Database Configuration inside `.env` file is correct then run this command
 
 ```sh
 php artisan migrate
