@@ -16,7 +16,14 @@ Then create the database with laravel artisan. \*Make sure that the Database Con
 php artisan migrate
 ```
 
-Command above will create a database and its tables. Also admin account is created during migrate so no need to create one. About admin account is on the next section. Then run the artisan server by executing command below
+Command above will create a database and its tables. Also admin account is created during migrate so no need to create one. About admin account is on the next section.
+Image that the user upload is stored in Laravel Storage so by default it can not be access from public source that mean admin dashboard can not access that file either. In order to fix that run this command
+
+```sh
+php artisan storage:link
+```
+
+Then run the artisan server by executing command below
 
 ```sh
 php artisan serve
